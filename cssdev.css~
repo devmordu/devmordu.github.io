@@ -286,15 +286,10 @@ svg {
 }
 
 .bk1 {
-  width:100%;
-  height:100%;
   color:black;
   font-weight:bold;
   background-image: url("images/s1.jpg");
-  background-size: cover;
-    -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+
   animation: myanimation1 20s infinite;
   animation-timing-function: ease-in-out;
   opacity: 0;
@@ -306,15 +301,11 @@ svg {
 }
 
 .bk2 {
-  width:100%;
-  height:100%;
+
   color:black;
   font-weight:bold;
   background-image: url("images/s2.jpg");
-  background-size: cover;
-    -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+
   animation: myanimation2 20s infinite;
   animation-timing-function: ease-in-out;
   opacity: 0;
@@ -326,16 +317,11 @@ svg {
 }
 
 .bk3 {
-  width:100%;
-  height:100%;
+
   color:black;
   font-weight:bold;
   background-image: url("images/s3.jpg");
-  background-size: cover;
-    -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  animation: myanimation3 20s infinite;
+
   animation-timing-function: ease-in-out;
   opacity: 0;
   position: absolute;
@@ -346,15 +332,11 @@ svg {
 }
 
 .bk4 {
-  width:100%;
-  height:100%;
+
   color:black;
   font-weight:bold;
   background-image: url("images/s4.jpg");
-  background-size: cover;
-    -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+
   animation: myanimation4 20s infinite;
   animation-timing-function: ease-in-out;
   opacity: 0;
@@ -366,16 +348,11 @@ svg {
 }
 
 .bk5 {
-  width:100%;
-  height:100%;
+
   color:black;
   font-weight:bold;
   background-image: url("images/s1.jpg");
-  background-size: cover;
-    -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  animation: myanimation5 20s infinite;
+
   animation-timing-function: ease-in-out;
   opacity: 0;
   position: absolute;
@@ -385,15 +362,10 @@ svg {
   right: 0;
 }
 .bk6 {
-  width:100%;
-  height:100%;
   color:black;
   font-weight:bold;
   padding: 2.25em 1.6875em;
-  background-size: cover;
-    -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+
   background-image: -webkit-repeating-linear-gradient(135deg, rgba(0,0,0,.3), rgba(0,0,0,.3) 1px, transparent 2px, transparent 2px, rgba(0,0,0,.3) 3px);
   background-image: -moz-repeating-linear-gradient(135deg, rgba(0,0,0,.3), rgba(0,0,0,.3) 1px, transparent 2px, transparent 2px, rgba(0,0,0,.3) 3px);
   background-image: -o-repeating-linear-gradient(135deg, rgba(0,0,0,.3), rgba(0,0,0,.3) 1px, transparent 2px, transparent 2px, rgba(0,0,0,.3) 3px);
@@ -410,14 +382,8 @@ svg {
 }
 
 .bk7 {
-  width:100%;
-  height:100%;
   color:black;
   font-weight:bold;
-  background-size: cover;
-    -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-color: black;
   opacity: 0.5;
   position: absolute;
@@ -481,79 +447,16 @@ svg {
 
 .parallax {
 	display:inline-block;
-    height:100%; 
     width:100%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+      background-size: cover;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 	
   }
 
 
 
-
-/*  navbar */
-.navbar-custom {
-    background-color: rgba(220,20,60,1);
-}
-
-/* change the brand and text color */
-.navbar-custom .navbar-brand,
-.navbar-custom .navbar-text {
-    color: white;
-}
-.navbar-custom .navbar-brand:hover,
-.navbar-custom .navbar-text:hover {
-    color: #f1f3ce;
-}	  
-
-/* change the link color */
-.navbar-custom .navbar-nav .nav-link {
-    color: white;
-	font-size: 18px;
-	font-weight: 600;
-	padding: 12px 24px;
-	transition:all 0.3s;
-}
-.navbar-custom .nav-link {
-    color: white;
-	font-size: 18px;
-	font-weight: 600;
-	padding: 12px 24px;
-	transition:all 0.3s;
-}
-.navbar-custom .nav-link:hover {
-    font-weight: 600;
-	padding: 12px 30px;
-	transition:all 0.4s;
-	color: white;
-}	  
-
-/* change the color of active or hovered links */
-.navbar-custom .nav-item.active .nav-link,
-.navbar-custom .nav-item:hover .nav-link {
-    font-weight: 600;
-	padding: 12px 30px;
-	transition:all 0.4s;
-	color: white;
-}
-
-/* for dropdown only - change the color of droodown */
-.navbar-custom .dropdown-menu {
-    background-color: #00293c
-}
-.navbar-custom .dropdown-item {
-    color: #00293c
-}
-.navbar-custom .dropdown-item:hover,
-.navbar-custom .dropdown-item:focus {
-    color: black;
-    background-color: #33ACBA;
-	  }
-.custom-toggler.navbar-toggler {
-    border-color:rgba(241,243,206,1.00);
-}
-.custom-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(241,243,206,1.00)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-}
