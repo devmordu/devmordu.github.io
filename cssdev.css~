@@ -289,9 +289,6 @@ svg {
   color:black;
   font-weight:bold;
   background-image: url("images/s1.jpg");
-
-  animation: myanimation1 20s infinite;
-  animation-timing-function: ease-in-out;
   opacity: 0;
   position: absolute;
   top: 0;
