@@ -490,12 +490,14 @@ xcontent
 
 -------------------------------- */
 main {
-   -webkit-transition: -webkit-transform 0.4s;
+  position: relative;
+  height: 100vh;
+  overflow-x: hidden;
+  -webkit-transition: -webkit-transform 0.4s;
   -moz-transition: -moz-transform 0.4s;
-  transition: transform 0.2s;
-  box-shadow: 0 0 30px #241d20;  
+  transition: transform 0.4s;
+  box-shadow: 0 0 30px #241d20;
 }
-
 main.scale-down {
   -webkit-transform: scale(0.9);
   -moz-transform: scale(0.9);
