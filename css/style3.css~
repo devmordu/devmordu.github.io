@@ -6,6 +6,7 @@
     top: 0px;
     left: 0px;
     z-index: 0;
+    -webkit-transform: translate3d(0,0,0);
 }
 .cb-slideshow:after {
     content: '';
@@ -22,6 +23,7 @@
     background-repeat: none;
     opacity: 0;
     z-index: 0;
+    -webkit-transform: translate3d(0,0,0);
 	-webkit-backface-visibility: hidden;
     -webkit-animation: imageAnimation 36s linear infinite 0s;
     -moz-animation: imageAnimation 36s linear infinite 0s;
@@ -30,7 +32,8 @@
     animation: imageAnimation 36s linear infinite 0s;
 }
 .cb-slideshow li div {
-    z-index: 1000;
+    z-index: 0;
+    -webkit-transform: translate3d(0,0,0);
     position: absolute;
     bottom: 30px;
     left: 0px;
@@ -42,12 +45,6 @@
     -o-animation: titleAnimation 36s linear infinite 0s;
     -ms-animation: titleAnimation 36s linear infinite 0s;
     animation: titleAnimation 36s linear infinite 0s;
-}
-
-.zz{
-}
-.added{
-display: none;
 }
 
 
