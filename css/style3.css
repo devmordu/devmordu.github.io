@@ -30,7 +30,7 @@
     animation: imageAnimation 36s linear infinite 0s;
 }
 .cb-slideshow li div {
-    z-index: 1000;
+    z-index: 1;
     position: absolute;
     bottom: 30px;
     left: 0px;
@@ -43,6 +43,14 @@
     -ms-animation: titleAnimation 36s linear infinite 0s;
     animation: titleAnimation 36s linear infinite 0s;
 }
+
+.zz{
+}
+.added{
+display: none;
+}
+
+
 .cb-slideshow li div h3 {
     font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
     font-size: 160px;

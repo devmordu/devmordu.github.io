@@ -1,59 +1,85 @@
 jQuery(document).ready(function($){
-	//open navigation clicking the menu icon
-	$('.cd-nav-trigger').on('click', function(event){
-		event.preventDefault();
-		toggleNav(true);
-	});
-	//close the navigation
-	$('.cd-close-nav, .cd-overlay').on('click', function(event){
-		event.preventDefault();
-		toggleNav(false);
-	});
-	//select a new section
-	$('.cd-nav li').on('click', function(event){
-		event.preventDefault();
-		var target = $(this),
-			//detect which section user has chosen
-			sectionTarget = target.data('menu');
-		if( !target.hasClass('cd-selected') ) {
-			//if user has selected a section different from the one alredy visible
-			//update the navigation -> assign the .cd-selected class to the selected item
-			target.addClass('cd-selected').siblings('.cd-selected').removeClass('cd-selected');
-			//load the new section
-			loadNewContent(sectionTarget);
-		} else {
-			// otherwise close navigation
-			toggleNav(false);
-		}
+	var overlayNav = $('.cd-overlay-nav'),
+		overlayContent = $('.cd-overlay-content'),
+		navigation = $('.cd-primary-nav'),
+		toggleNav = $('.cd-nav-trigger');
+
+	//inizialize navigation and content layers
+	layerInit();
+	$(window).on('resize', function(){
+		window.requestAnimationFrame(layerInit);
 	});
 
-	function toggleNav(bool) {
-		$('.cd-nav-container, .cd-overlay').toggleClass('is-visible', bool);
-		$('main').toggleClass('scale-down', bool);
-	}
-
-	function loadNewContent(newSection) {
-		//create a new section element and insert it into the DOM
-		var section = $('<section class="cd-section '+newSection+'"></section>').appendTo($('main'));
-		//load the new content from the proper html file
-		section.load(newSection+'.html .cd-section > *', function(event){
-			//add the .cd-selected to the new section element -> it will cover the old one
-			section.addClass('cd-selected').on('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
-				//close navigation
-				toggleNav(false);
+	//open/close the menu and cover layers
+	toggleNav.on('click', function(){
+		if(!toggleNav.hasClass('close-nav')) {
+			//it means navigation is not visible yet - open it and animate navigation layer
+			toggleNav.addClass('close-nav');
+			
+			overlayNav.children('span').velocity({
+				translateZ: 0,
+				scaleX: 1,
+				scaleY: 1,
+			}, 500, 'easeInCubic', function(){
+				navigation.addClass('fade-in');
 			});
-			section.prev('.cd-selected').removeClass('cd-selected');
-		});
-
-		$('main').on('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
-			//once the navigation is closed, remove the old section from the DOM
-			section.prev('.cd-section').remove();
-		});
-
-		if( $('.no-csstransitions').length > 0 ) {
-			//if browser doesn't support transitions - don't wait but close navigation and remove old item
-			toggleNav(false);
-			section.prev('.cd-section').remove();
+		} else {
+			//navigation is open - close it and remove navigation layer
+			toggleNav.removeClass('close-nav');
+			
+			overlayContent.children('span').velocity({
+				translateZ: 0,
+				scaleX: 1,
+				scaleY: 1,
+			}, 500, 'easeInCubic', function(){
+				navigation.removeClass('fade-in');
+				
+				overlayNav.children('span').velocity({
+					translateZ: 0,
+					scaleX: 0,
+					scaleY: 0,
+				}, 0);
+				
+				overlayContent.addClass('is-hidden').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
+					overlayContent.children('span').velocity({
+						translateZ: 0,
+						scaleX: 0,
+						scaleY: 0,
+					}, 0, function(){overlayContent.removeClass('is-hidden')});
+				});
+				if($('html').hasClass('no-csstransitions')) {
+					overlayContent.children('span').velocity({
+						translateZ: 0,
+						scaleX: 0,
+						scaleY: 0,
+					}, 0, function(){overlayContent.removeClass('is-hidden')});
+				}
+			});
 		}
+	});
+
+	function layerInit(){
+		var diameterValue = (Math.sqrt( Math.pow($(window).height(), 2) + Math.pow($(window).width(), 2))*2);
+		overlayNav.children('span').velocity({
+			scaleX: 0,
+			scaleY: 0,
+			translateZ: 0,
+		}, 50).velocity({
+			height : diameterValue+'px',
+			width : diameterValue+'px',
+			top : -(diameterValue/2)+'px',
+			left : -(diameterValue/2)+'px',
+		}, 0);
+
+		overlayContent.children('span').velocity({
+			scaleX: 0,
+			scaleY: 0,
+			translateZ: 0,
+		}, 50).velocity({
+			height : diameterValue+'px',
+			width : diameterValue+'px',
+			top : -(diameterValue/2)+'px',
+			left : -(diameterValue/2)+'px',
+		}, 0);
 	}
 });
