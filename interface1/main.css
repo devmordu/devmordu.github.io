@@ -1,0 +1,362 @@
+@charset "utf-8";
+/* CSS Document */
+	 .navbg {
+  
+	  background-image: url("images/asanoha-400px.png");
+      background-repeat: repeat;
+  }
+	  .pane{
+		 box-shadow: 0 7px 10px 0px #555;
+		  transition:all 0.3s;
+
+	  }
+	  .pane:hover{
+		 box-shadow: 0 9px 10px 0px #555;
+		  transition:all 0.3s;
+
+	  }
+	  
+	  
+	  
+	  .portbox{
+		 box-shadow: 0px 0px 10px 1px #555;
+		  transition:all 0.3s;
+		  padding-top: 35px
+
+	  }
+	  .portbox:hover{
+		 box-shadow: 0px 0px 13px 4px #555;
+		  transition:all 0.3s;
+
+	  }
+.button1 {
+  
+  font-weight: 600;
+  border-radius: 4px;
+  font-size: 14px;
+  margin: 0px;
+}
+.button1:hover {
+  background-color:#f62a00;
+	color: white;
+	transition: all 0.4s;
+}
+	  
+.button2 {
+  
+  font-weight: 400;
+  border-radius: 10px;
+  background-color: #1e656D;
+	
+  color:white;
+  font-size: 17px;
+  margin: 5px;
+  padding: 15px 30px;
+}
+.button2:hover {
+  background-color:#f62a00;
+	color: white;
+	text-decoration: none;
+	transition: all 0.4s;
+}	
+
+
+
+.button3 {
+  
+  font-weight: 400;
+  border-radius: 10px;
+  background-color:#f1f3ce;
+	
+  color:#00293c;
+  font-size: 17px;
+  margin: 5px;
+  padding: 15px 30px;
+}
+.button3:hover {
+  background-color:#1e656D;
+	color: #f1f3ce;
+	text-decoration: none;
+	transition: all 0.4s;
+}
+	  
+.buttonc {
+}
+.buttonc:hover {
+  background-color:rgba(10,79,0,1.00);
+	transition: all 0.4s
+}	 
+.carousel-inner img{
+      width: 100%;
+      height: 100%;
+  }
+	  .dropdown .dropdown-menu {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+
+    max-height: 0;
+    display: block;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.dropdown:hover .dropdown-menu {
+    max-height: 200px;
+	background-color: #f1f3ce;
+    opacity: 1;
+}
+	  
+.carousel-item {
+  height: 80vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.portfolio-item {
+  margin-bottom: 30px;
+}
+	  
+
+.parallax {
+	display:inline-block;
+	background-color:#FFCE00;
+    height:100%; 
+    width:100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	
+  }
+.overlay {
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+}
+
+.social {
+ 
+ color:#00293c;
+ transition:all 0.3s;
+ 
+ 
+
+}
+.social:hover {
+ color:#f62a00;
+ transition:all 0.3s;
+}
+	  
+.social2 {
+ 
+ color:#f1f3ce;
+ transition:all 0.3s;
+ 
+ 
+
+}
+.social2:hover {
+ color:#f62a00;
+ transition:all 0.3s;
+}
+	  	  
+
+.linkgen
+{
+ color:#00293c;
+ transition:all 0.3s;
+ text-decoration:none;
+
+}
+
+.linkgen:hover{
+  color:#f62a00;
+  transition:all 0.3s;
+  padding-left: 5px;
+  text-decoration:none;
+}
+	  
+.navbar-custom {
+    background-color: #00293c;
+}
+
+/* change the brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: white;
+}
+.navbar-custom .navbar-brand:hover,
+.navbar-custom .navbar-text:hover {
+    color: #f1f3ce;
+}	  
+
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+    color: white;
+	font-size: 18px;
+	font-weight: 600;
+	padding: 12px 24px;
+	transition:all 0.3s;
+}
+.navbar-custom .nav-link {
+    color: white;
+	font-size: 18px;
+	font-weight: 600;
+	padding: 12px 24px;
+	transition:all 0.3s;
+}
+.navbar-custom .nav-link:hover {
+    font-weight: 600;
+	padding: 12px 30px;
+	transition:all 0.4s;
+	color: white;
+}	  
+
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    font-weight: 600;
+	padding: 12px 30px;
+	transition:all 0.4s;
+	color: white;
+}
+
+/* for dropdown only - change the color of droodown */
+.navbar-custom .dropdown-menu {
+    background-color: #00293c
+}
+.navbar-custom .dropdown-item {
+    color: #00293c
+}
+.navbar-custom .dropdown-item:hover,
+.navbar-custom .dropdown-item:focus {
+    color: black;
+    background-color: #33ACBA;
+	  }
+.downbox 
+	  {
+		  background-color: #f62a00;
+		  padding-top: 25px;		  
+		  padding-bottom: 25px;
+		  padding-left: 50px;
+		  padding-right: 50px;
+		  color:white;
+		  transition:all 0.3s;
+		  border-width: 2px;
+		  border:thin dotted;
+		  
+	  }
+.downbox:hover
+	  {
+		  background-color: #1e656D;
+		  padding-top: 25px;		 
+		  padding-bottom: 25px;
+		  padding-left: 5px;
+		  padding-right: 20px;
+		  transition:all 0.3s;
+		  
+	  }
+		 
+.row{
+    margin-left: 0;
+    margin-right: 0;
+}	  
+	  
+.carousel-control-prev-icon {
+ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f62a00' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+ padding: 20px 20px;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f62a00' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+  padding: 20px 20px;
+  
+}
+
+	  .carousel-control-next	{
+		  transition: all 0.3s;
+	  }  
+	    .carousel-control-next:hover	{
+
+		  transition: all 0.3s;
+	  }  
+	  .carousel-control-prev	{
+		  transition: all 0.3s;
+	  }  
+	    .carousel-control-prev:hover	{
+		  
+		  transition: all 0.3s;
+	  }
+	  
+	  
+hr.style17 {
+	border-top: 5px solid #f62a00;
+	border-top-left-radius: 80%;
+	border-top-right-radius: 80%;
+	border-bottom-left-radius: 80%;
+	border-bottom-right-radius: 80%;
+	
+}
+	  
+
+.modal-content {
+ 
+    height: 100%;
+ 
+    background-color:#f1f3ce;
+ 
+}       
+ 
+.modal-header {
+ 
+    background-color: #00293c;
+ 
+    padding:16px 16px;
+ 
+    color:#FFF;
+ 
+    border-bottom:2px dashed #00293c;
+ 
+ }
+.modal-footer {
+ 
+    background-color: #00293c;
+ 
+    padding:16px 16px;
+ 
+    color:#FFF;
+ 
+    border-bottom:2px dashed #00293c;
+ 
+ }	  
+.custom-toggler.navbar-toggler {
+    border-color:rgba(241,243,206,1.00);
+}
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(241,243,206,1.00)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+@media only screen and (max-width:749px) {
+  .parallax {
+    background-attachment: scroll;
+   }
+}	
+	  
+.paddd
+	  {
+		  padding:30px 30px
+	  }

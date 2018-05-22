@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="bootstrap.min.css">
+<link rel="stylesheet" href="maincss.css">
+<link rel="stylesheet" type="text/css" href="css/demo.css" />
+<link rel="stylesheet" type="text/css" href="css/style3.css" />
+<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+
+</head>
+<body style="margin:0;">
+<!-- Loader division -->
+
+<!--div  id="ldd" class="loadd container-fluid">
+<div id="loader"></div>
+</div-->
+<!-- main page -->
+<!-- navbar -->
+
+<header class="mydiv">
+		<a class="cd-logo" href="#0"><img src="img/cd-logo.svg" alt="Logo"></a>
+</header>
+	<nav class="mydiv">
+		<ul class="cd-primary-nav">
+			<li><a href="#0">The team</a></li>
+			<li><a href="#0">Our services</a></li>
+			<li><a href="#0">Our projects</a></li>
+			<li><a href="#0">Start a project</a></li>
+			<li><a href="#0">Join In</a></li>
+			<li><a href="#0">Create an account</a></li>
+		</ul>
+	</nav>
+
+
+<!-- carousel -->
+<div class="mydiv container-fluid" style="width: 100%; height: 100%;background-color: #1D1F20;">
+<ul class="cb-slideshow">
+            <li><span>1</span><div class="zz"><h3>re·lax·a·tion</h3></div></li>
+            <li><span>2</span><div class="zz"><h3>qui·e·tude</h3></div></li>
+            <li><span>3</span><div class="zz"><h3>bal·ance</h3></div></li>
+            <li><span>4</span><div class="zz"><h3>e·qua·nim·i·ty</h3></div></li>
+            <li><span>5</span><div class="zz"><h3>com·po·sure</h3></div></li>
+            <li><span>6</span><div class="zz"><h3>se·ren·i·ty</h3></div></li>
+            
+</ul>
+</div>
+<div class="container-fluid mydiv" style="padding: 500px 0px; color: blue; background-color: #1D1F20; position: relative;">
+
+This is Sparta
+
+</div>
+
+<div class="mydiv">
+	<div class="cd-overlay-nav">
+		<span></span>
+	</div> <!-- cd-overlay-nav -->
+
+	<div class="cd-overlay-content">
+		<span></span>
+	</div> <!-- cd-overlay-content -->
+
+	<a id="burger" href="#0" class="cd-nav-trigger">Menu<span class="cd-icon"></span></a>
+</div>	
+
+
+<!-- Script for loader -->
+<script type="text/javascript" >
+
+var myVar;
+
+function loadfunct() {
+    myVar = setTimeout(showPage, 0);
+}
+
+function showPage() {
+  
+  var x = document.getElementsByClassName("mydiv");
+  var i;
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "block";
+  } 
+  
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("ldd").style.display = "none";
+  }
+
+
+</script>
+
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/velocity.min.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+<script src="jquery.min.js"></script>
+<script src="bootstrap.min.js"></script>
+<script type="text/javascript" src="js/modernizr.js"></script>
+
+</body>
+</html>
