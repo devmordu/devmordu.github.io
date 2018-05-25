@@ -1,101 +1,357 @@
-<!DOCTYPE HTML>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="bootstrap.min.css">
-<link rel="stylesheet" href="maincss.css">
-<link rel="stylesheet" type="text/css" href="css/demo.css" />
-<link rel="stylesheet" type="text/css" href="css/style3.css" />
-<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
-<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">	
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="custom/main.css">	
+			
+<title>Interface 2018 Website</title>
+	
+	
 </head>
-<body style="margin:0;">
-<!-- Loader division -->
 
-<!--div  id="ldd" class="loadd container-fluid">
-<div id="loader"></div>
-</div-->
-<!-- main page -->
-<!-- navbar -->
+<body>
 
-<header class="mydiv">
-		<a class="cd-logo" href="#0"><img src="img/cd-logo.svg" alt="Logo"></a>
-</header>
-	<nav class="mydiv">
-		<ul class="cd-primary-nav">
-			<li><a href="#0">The team</a></li>
-			<li><a href="#0">Our services</a></li>
-			<li><a href="#0">Our projects</a></li>
-			<li><a href="#0">Start a project</a></li>
-			<li><a href="#0">Join In</a></li>
-			<li><a href="#0">Create an account</a></li>
-		</ul>
-	</nav>
-
+<div class="mainclass">	
+<main>
 
 <!-- carousel -->
-<div class="mydiv container-fluid" style="width: 100%; height: 100%;background-color: #1D1F20;">
-<ul class="cb-slideshow">
-            <li><span>1</span><div class="zz"><h3>re·lax·a·tion</h3></div></li>
-            <li><span>2</span><div class="zz"><h3>qui·e·tude</h3></div></li>
-            <li><span>3</span><div class="zz"><h3>bal·ance</h3></div></li>
-            <li><span>4</span><div class="zz"><h3>e·qua·nim·i·ty</h3></div></li>
-            <li><span>5</span><div class="zz"><h3>com·po·sure</h3></div></li>
-            <li><span>6</span><div class="zz"><h3>se·ren·i·ty</h3></div></li>
-            
-</ul>
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>	  
+
+  <div class="carousel-inner">
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/1.jpg" data-color="lightblue" alt="First Image">
+      <div class="carousel-caption d-md-block">
+        <h5>First Image</h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/2.jpg" data-color="firebrick" alt="Second Image">
+      <div class="carousel-caption d-md-block">
+        <h5>Second Image</h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/3.jpg" data-color="violet" alt="Third Image">
+      <div class="carousel-caption d-md-block">
+        <h5>Third Image</h5>
+      </div>
+    </div>
+	<div class="carousel-item">
+      <img class="d-block w-100" src="images/4.jpg" data-color="lightred" alt="Fourth Image">
+      <div class="carousel-caption d-md-block">
+        <h5>Fourth Image</h5>
+      </div>
+    </div>  
+  </div>
+ 
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+<span class="sr-only">Previous</span>
+</a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+<span class="carousel-control-next-icon" aria-hidden="true"></span>
+<span class="sr-only">Next</span>
+</a>
 </div>
-<div class="container-fluid mydiv" style="padding: 500px 0px; color: blue; background-color: #1D1F20; position: relative;">
+<!-- Tabbed options -->
+<div class="container-fluid text-center" style="background-color: antiquewhite; padding: 100px 0px;">
+	<div class="container" style="color:antiquewhite;">
+	<div class="" style="color: darkgray; padding-bottom: 30px; font-size: 50px;"><h1>SELECT YOUR OPTION</h1></div>
+	<div class="cd-gallery-container">
+		<nav class="cd-filter">
+			<ul>
+				<li class="placeholder"> 
+					<a data-type="red" href="#0">STUDENT</a> <!-- selected option on mobile -->
+				</li> 
 
-This is Sparta
+				<li>
+					<a class="selected" data-type="red" href="#0">STUDENT</a>
+				</li>
 
-</div>
+				<li>
+					<a data-type="blue" href="#0">START UP</a>
+				</li>
+			</ul>
+		</nav>
 
-<div class="mydiv">
-	<div class="cd-overlay-nav">
-		<span></span>
-	</div> <!-- cd-overlay-nav -->
+		<ul class="cd-gallery cd-container">
+			<li>
+				<ul class="cd-item-wrapper">
+					<li data-type="red" class="is-visible">
+						<a href="#"><img src="images/thumb-red.jpg" alt="thumbnail"></a>
+					</li>
 
-	<div class="cd-overlay-content">
-		<span></span>
-	</div> <!-- cd-overlay-content -->
+					<li data-type="blue" class="is-hidden">
+						<a href="#"><img src="images/thumb-blue.jpg" alt="thumbnail"></a>
+					</li>
 
-	<a id="burger" href="#0" class="cd-nav-trigger">Menu<span class="cd-icon"></span></a>
+				</ul>
+			</li>
+
+			<li>
+				<ul class="cd-item-wrapper">
+					<li data-type="red" class="is-visible">
+						<a href="#"><img src="images/thumb-red.jpg" alt="thumbnail"></a>
+					</li>
+
+					<li data-type="blue" class="is-hidden">
+						<a href="#"><img src="images/thumb-blue.jpg" alt="thumbnail"></a>
+					</li>
+
+				</ul>
+			</li>
+
+			<li>
+				<ul class="cd-item-wrapper">
+					<li data-type="red" class="is-visible">
+						<a href="#"><img src="images/thumb-red.jpg" alt="thumbnail"></a>
+					</li>
+
+					<li data-type="blue" class="is-hidden">
+						<a href="#"><img src="images/thumb-blue.jpg" alt="thumbnail"></a>
+					</li>
+
+				</ul>
+			</li>
+
+			<li>
+			    <ul class="cd-item-wrapper">
+					<li data-type="red" class="is-visible">
+						<a href="#"><img src="images/thumb-red.jpg" alt="thumbnail"></a>
+					</li>
+
+					<li data-type="blue" class="is-hidden">
+						<a href="#"><img src="images/thumb-blue.jpg" alt="thumbnail"></a>
+					</li>
+
+				</ul>
+			</li>
+		</ul> <!-- cd-gallery -->
+	</div>	
+	</div>	
+</div>		
+<div class="container-fluid" style="background-color:burlywood; padding: 180px 0px;">
+	<div class="container text-center">
+		<div class="row container text-center">
+	      <div class="container col-md-4 text-center">
+			  <img class="img-fluid" src="images/NIT-Calicut-Logo.png">
+          </div>
+		  <div class="container text-center col-md-8" style="color: midnightblue; font-size: 18px; padding-top: 20px;" >
+			  <div class="text-center" style="color: brown; font-size: 30px;padding-bottom: 40px;"> WHO ARE WE ?</div>
+			  Starting out as IEEE NITC SB's event to promote start up ideas, Interface has now grown into the largest summit in the Malabar region exclusive to budding start-ups. Spanning over 3 days, it provides a platform for student entrepreneurs to discuss their ideas and products with the experienced ones. The primary objective of Interface is to find and support the best and most innovative startup ideas from the numerous abstracts and submissions by colleges and incubation cells across the State.
+		  </div>
+		</div>
+	
+	</div>
+	
 </div>	
 
+	
+<!-- Side Modals -->
+	
+		<section id="cd-team" class="cd-section" style="color: #8abeb2;">
+			<div class="cd-container">
+				
+				<ul>
+					<li>
+						<a href="#0" data-type="member-1">
+							<figure>
+								<img src="images/team-member-1.jpg" alt="Team member 1">
+								<div class="cd-img-overlay"><span>View Bio</span></div>
+							</figure>
 
-<!-- Script for loader -->
-<script type="text/javascript" >
+							<div class="cd-member-info">
+								John Smith <span>CEO</span>
+							</div> <!-- cd-member-info -->
+						</a>
+					</li>
+					
+					<li>
+						<a href="#0" data-type="member-2">
+							<figure>
+								<img src="images/team-member-1.jpg" alt="Team member 1">
+								<div class="cd-img-overlay"><span>View Bio</span></div>
+							</figure>
 
-var myVar;
+							<div class="cd-member-info">
+								Cristina Cameron <span>Marketing</span>
+							</div> <!-- cd-member-info -->
+						</a>
+					</li>
 
-function loadfunct() {
-    myVar = setTimeout(showPage, 0);
-}
+					<li>
+						<a href="#0" data-type="member-3">
+							<figure>
+								<img src="images/team-member-1.jpg" alt="Team member 1">
+								<div class="cd-img-overlay"><span>View Bio</span></div>
+							</figure>
 
-function showPage() {
-  
-  var x = document.getElementsByClassName("mydiv");
-  var i;
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "block";
-  } 
-  
-  document.getElementById("loader").style.display = "none";
-  document.getElementById("ldd").style.display = "none";
-  }
+							<div class="cd-member-info">
+								Samuel Noel <span>Web Design</span>
+							</div> <!-- cd-member-info -->
+						</a>
+					</li>
+					
+				</ul>
+			</div> <!-- cd-container -->
+		</section> <!-- cd-team -->
+<!-- Footer -->
 
 
-</script>
+    <footer id="myFooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h5>Get started</h5>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Sign up</a></li>
+                        <li><a href="#">Downloads</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>About us</h5>
+                    <ul>
+                        <li><a href="#">Company Information</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Reviews</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>Support</h5>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Help desk</a></li>
+                        <li><a href="#">Forums</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>Legal</h5>
+                    <ul>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <iframe id="map-container" frameborder="0" style="border:0"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3912.2128500089893!2d75.93321922382047!3d11.319147321369957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba642fd50000001%3A0xbe8a77db953bda6c!2sNational+Institute+of+Technology%2C+Calicut!5e0!3m2!1sen!2sin!4v1527255945810" >
+            </iframe>
+        </div>
+        <div class="social-networks">
+            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="google"><i class="fa fa-google-plus"></i></a>
+        </div>
+        <div class="footer-copyright">
+            <p>© 2018 Copyright Interface '18 </p>
+        </div>
+    </footer>
 
-<script src="js/jquery-2.1.1.js"></script>
-<script src="js/velocity.min.js"></script>
-<script src="js/main.js"></script> <!-- Resource jQuery -->
-<script src="jquery.min.js"></script>
-<script src="bootstrap.min.js"></script>
-<script type="text/javascript" src="js/modernizr.js"></script>
+		
+</main>	
+<!-- Navbar Things  -->	
+	<a href="#cd-nav" class="cd-nav-trigger">Menu 
+		<span class="cd-nav-icon"></span>
 
+		<svg x="0px" y="0px" width="54px" height="54px" viewBox="0 0 54 54">
+			<circle fill="transparent" stroke="#656e79" stroke-width="1" cx="27" cy="27" r="25" stroke-dasharray="157 157" stroke-dashoffset="157"></circle>
+		</svg>
+	</a>
+	<div id="cd-nav" class="cd-nav" style="color: #243040;">
+		<div class="cd-navigation-wrapper">
+			<div class="cd-half-block">
+				<h2>Navigation</h2>
+
+				<nav>
+					<ul class="cd-primary-nav">
+						<li><a href="#0" class="selected">The team</a></li>
+						<li><a href="#0">Our services</a></li>
+						<li><a href="#0">Our projects</a></li>
+						<li><a href="#0">Start a project</a></li>
+						<li><a href="#0">Contact us</a></li>
+					</ul>
+				</nav>
+			</div><!-- .cd-half-block -->
+			
+			<div class="cd-half-block">
+				<address>
+					<ul class="cd-contact-info">
+						<li><a href="mailto:info@myemail.co">info@myemail.co</a></li>
+						<li>0244-12345678</li>
+						<li>
+							<span>MyStreetName 24</span>
+							<span>W1234X</span>
+							<span>London, UK</span>
+						</li>
+					</ul>
+				</address>
+			</div> <!-- .cd-half-block -->
+		</div> <!-- .cd-navigation-wrapper -->
+	</div>	
+		
+	
+<div class="cd-overlay"></div>	
+</div>		
+<!-- side modals details-->
+
+<div class="cd-member-bio member-1">
+		<div class="cd-member-bio-pict">
+			<img src="images/member-bio-img-1.jpg" alt="Member Bio image">
+		</div> <!-- cd-member-bio-pict -->
+
+		<div class="cd-bio-content">
+			<h1>Meet John Smith</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, amet, voluptatibus et omnis dolore illo saepe voluptatem qui quibusdam sunt corporis ut iure repellendus delectus voluptate explicabo temporibus quos eaque?</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, explicabo, doloribus, esse rem officia quas facilis eius alias similique ducimus amet quam odio perspiciatis dolorem ipsam! Ab, dolores, adipisci, explicabo pariatur illum deleniti quam iusto placeat nisi aliquam praesentium mollitia eligendi a! Sequi, voluptatibus sed quos possimus harum rem tempore fugiat? Corporis, officia, assumenda, asperiores blanditiis quidem aliquam fugiat vel excepturi velit provident aut omnis quos aliquid tempora eaque. Nemo, eveniet, sint maxime eum maiores totam est inventore numquam voluptatem hic nam blanditiis placeat illum nesciunt voluptatum eos cum quos magni voluptates ipsam. Perspiciatis alias ducimus libero. Quo provident omnis fugiat ut repellendus optio cum quaerat odio et ipsa. Molestias, atque repellat non maxime amet corporis magni libero quam numquam error beatae at asperiores et a porro nostrum ab necessitatibus esse aliquid iure repellendus obcaecati unde quo eius eum dolores quasi consectetur culpa velit optio! Sequi, dolor, minima, veniam doloribus in ullam cupiditate iste animi ipsum esse eaque similique illo temporibus magni et earum amet sint deleniti est reiciendis. Maxime, quis, animi, ad quasi adipisci suscipit alias iste reprehenderit ea placeat nulla commodi nobis magnam provident veniam earum odit eveniet possimus aut voluptatum dolorum culpa necessitatibus facere totam quisquam. Ipsam.</p>
+		</div> <!-- cd-bio-content -->
+	</div> <!-- cd-member-bio -->
+
+	<div class="cd-member-bio member-2">
+		<div class="cd-member-bio-pict">
+			<img src="images/member-bio-img-2.jpg" alt="Member Bio image">
+		</div> <!-- cd-member-bio-pict -->
+
+		<div class="cd-bio-content">
+			<h1>Meet Cristina Cameron</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, amet, voluptatibus et omnis dolore illo saepe voluptatem qui quibusdam sunt corporis ut iure repellendus delectus voluptate explicabo temporibus quos eaque?</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, explicabo, doloribus, esse rem officia quas facilis eius alias similique ducimus amet quam odio perspiciatis dolorem ipsam! Ab, dolores, adipisci, explicabo pariatur illum deleniti quam iusto placeat nisi aliquam praesentium mollitia eligendi a! Sequi, voluptatibus sed quos possimus harum rem tempore fugiat? Corporis, officia, assumenda, asperiores blanditiis quidem aliquam fugiat vel excepturi velit provident aut omnis quos aliquid tempora eaque. Nemo, eveniet, sint maxime eum maiores totam est inventore numquam voluptatem hic nam blanditiis placeat illum nesciunt voluptatum eos cum quos magni voluptates ipsam. Perspiciatis alias ducimus libero. Quo provident omnis fugiat ut repellendus optio cum quaerat odio et ipsa. Molestias, atque repellat non maxime amet corporis magni libero quam numquam error beatae at asperiores et a porro nostrum ab necessitatibus esse aliquid iure repellendus obcaecati unde quo eius eum dolores quasi consectetur culpa velit optio! Sequi, dolor, minima, veniam doloribus in ullam cupiditate iste animi ipsum esse eaque similique illo temporibus magni et earum amet sint deleniti est reiciendis. Maxime, quis, animi, ad quasi adipisci suscipit alias iste reprehenderit ea placeat nulla commodi nobis magnam provident veniam earum odit eveniet possimus aut voluptatum dolorum culpa necessitatibus facere totam quisquam. Ipsam.</p>
+		</div> <!-- cd-bio-content -->
+	</div> <!-- cd-member-bio -->
+
+	<div class="cd-member-bio member-3">
+		<div class="cd-member-bio-pict">
+			<img src="images/member-bio-img-3.jpg" alt="Member Bio image">
+		</div> <!-- cd-member-bio-pict -->
+
+		<div class="cd-bio-content">
+			<h1>Meet Samuel Noel</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, amet, voluptatibus et omnis dolore illo saepe voluptatem qui quibusdam sunt corporis ut iure repellendus delectus voluptate explicabo temporibus quos eaque?</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, explicabo, doloribus, esse rem officia quas facilis eius alias similique ducimus amet quam odio perspiciatis dolorem ipsam! Ab, dolores, adipisci, explicabo pariatur illum deleniti quam iusto placeat nisi aliquam praesentium mollitia eligendi a! Sequi, voluptatibus sed quos possimus harum rem tempore fugiat? Corporis, officia, assumenda, asperiores blanditiis quidem aliquam fugiat vel excepturi velit provident aut omnis quos aliquid tempora eaque. Nemo, eveniet, sint maxime eum maiores totam est inventore numquam voluptatem hic nam blanditiis placeat illum nesciunt voluptatum eos cum quos magni voluptates ipsam. Perspiciatis alias ducimus libero. Quo provident omnis fugiat ut repellendus optio cum quaerat odio et ipsa. Molestias, atque repellat non maxime amet corporis magni libero quam numquam error beatae at asperiores et a porro nostrum ab necessitatibus esse aliquid iure repellendus obcaecati unde quo eius eum dolores quasi consectetur culpa velit optio! Sequi, dolor, minima, veniam doloribus in ullam cupiditate iste animi ipsum esse eaque similique illo temporibus magni et earum amet sint deleniti est reiciendis. Maxime, quis, animi, ad quasi adipisci suscipit alias iste reprehenderit ea placeat nulla commodi nobis magnam provident veniam earum odit eveniet possimus aut voluptatum dolorum culpa necessitatibus facere totam quisquam. Ipsam.</p>
+		</div> <!-- cd-bio-content -->
+	</div> <!-- cd-member-bio -->
+	<a href="#0" class="cd-member-bio-close">Close</a> <!-- close the author bio section -->	
+	
+<!--Preload Images  -->
+	
+<div class="preload-images"></div>	
+	
+<!--  -->	
+<!-- js Scripts -->	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+<script src="custom/main.js"></script>	
+<script src="includes/modernizr.js"></script>		
 </body>
 </html>
