@@ -136,8 +136,8 @@ main {
   z-index: 3;
   left: 5%;
   top: 20px;
-  height: 54px;
-  width: 54px;
+  height: 57px;
+  width: 57px;
   background-color: #243040;
   border-radius: 50%;
   /* image replacement */
@@ -610,6 +610,7 @@ xgallery
   margin-top: 2em;
   position: relative;
   z-index: 5;
+  padding: 10px 50px;	
 }
 .cd-gallery > li {
   position: relative;
@@ -652,18 +653,25 @@ xgallery
 .cd-gallery .cd-item-wrapper > li {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  border-radius: 0.25em;
+  border-radius: 0.5em;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  
 }
 .cd-gallery .cd-item-wrapper > li img {
   display: block;
   width: 100%;
-  border-radius: 0.25em;
+  border-radius: 0.5em;
 }
 .cd-gallery li.is-visible {
   /* the front item, visible by default */
   position: relative;
   z-index: 5;
+}
+
+.cd-gallery li a :hover {
+  /* the front item, visible by default */
+  transition: 0.3s;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
 }
 .cd-gallery li.is-hidden {
   /* the hidden items, right behind the front one */
