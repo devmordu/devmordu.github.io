@@ -5,8 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">	
+<link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>	
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>	
 <link rel="stylesheet" href="custom/main.css">	
 			
 <title>Interface 2018 Website</title>
@@ -20,49 +21,75 @@
 <main>
 
 <!-- carousel -->
-  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <div id="carouselExampleIndicators" class="carousel carousel-fade slide" data-ride="carousel">
+  <div class="container-fluid text-center" style="position: absolute; z-index: 300; padding-top: 25vmin;" >  
+    
+	<section class="cd-intro container-fluid" style="background-color:rgba(140,137,137,0.8);">
+		<h1 class="cd-headline letters rotate-3">
+			<span>INTERFACE</span>
+			<span class="cd-words-wrapper">
+				<b class="is-visible">PITCHING</b>
+				<b>&nbsp;&nbsp;TALKS&nbsp;</b>
+				<b>&nbsp;EVENTS&nbsp;</b>
+				<b>&nbsp;&nbsp;2018&nbsp;&nbsp;</b>
+			</span>
+		</h1>
+	</section>  
+	</div>		  
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+	<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>  
   </ol>	  
 
   <div class="carousel-inner">
     <div class="carousel-item">
-      <img class="d-block w-100" src="images/1.jpg" data-color="lightblue" alt="First Image">
+		<im class="d-block w-100" src="images/1.jpg"  alt="First Image"></im>
+     	 
       <div class="carousel-caption d-md-block">
-        <h5>First Image</h5>
+              <img class="img-fluid" src="images/group.svg" style="width: 15vh;" data-animation="animated bounceInLeft" >
+		      <div >
+              <h3 style=" " data-animation="animated bounceInRight">
+                EVENTS
+              </h3>
+			  </div>	  
+              <button class="btn btn-primary btn-lg" data-animation="animated zoomInUp">Button</button>
       </div>
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="images/2.jpg" data-color="firebrick" alt="Second Image">
+		<im class="d-block w-100" src="images/2.jpg"  alt="Second Image"></im>
       <div class="carousel-caption d-md-block">
-        <h5>Second Image</h5>
+        <img class="img-fluid" src="images/group.svg" style="width: 15vh;" data-animation="animated bounceInLeft" >
+              <h3 data-animation="animated bounceInRight">
+                EVENTS
+              </h3>
+              <button class="btn btn-primary btn-lg" data-animation="animated zoomInUp">Button</button>
       </div>
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="images/3.jpg" data-color="violet" alt="Third Image">
+      <im class="d-block w-100" src="images/3.jpg"  alt="Third Image"></im>
       <div class="carousel-caption d-md-block">
-        <h5>Third Image</h5>
+        <img class="img-fluid" src="images/group.svg" style="width: 15vh;" data-animation="animated bounceInLeft" >
+              <h3 data-animation="animated bounceInRight">
+                EVENTS
+              </h3>
+              <button class="btn btn-primary btn-lg" data-animation="animated zoomInUp">Button</button>
       </div>
     </div>
 	<div class="carousel-item">
-      <img class="d-block w-100" src="images/4.jpg" data-color="lightred" alt="Fourth Image">
+      <im class="d-block w-100" src="images/4.jpg"  alt="Fourth Image"></im>
       <div class="carousel-caption d-md-block">
-        <h5>Fourth Image</h5>
+        <img class="img-fluid" src="images/group.svg" style="width: 15vh;" data-animation="animated bounceInLeft" >
+              <h3 data-animation="animated bounceInRight">
+                EVENTS
+              </h3>
+              <button class="btn btn-primary btn-lg" data-animation="animated zoomInUp">Button</button>
       </div>
     </div>  
   </div>
- 
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-<span class="sr-only">Previous</span>
-</a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-<span class="carousel-control-next-icon" aria-hidden="true"></span>
-<span class="sr-only">Next</span>
-</a>
-</div>
+      
+</div>	
 <!-- Tabbed options -->
 <div class="container-fluid text-center" style="background-color: antiquewhite; padding: 100px 0px;">
 	<div class="container" style="color:antiquewhite;">
@@ -158,7 +185,9 @@
 
 	
 <!-- Side Modals -->
-	
+<div class="container-fluid" style="background-color: #8abeb2;">
+	<div class="container">
+		<div class="container row">
 		<section id="cd-team" class="cd-section" style="color: #8abeb2;">
 			<div class="cd-container">
 				
@@ -204,7 +233,11 @@
 					
 				</ul>
 			</div> <!-- cd-container -->
-		</section> <!-- cd-team -->
+		</section>
+	</div>
+	</div>
+	</div>
+	
 <!-- Footer -->
 
 
