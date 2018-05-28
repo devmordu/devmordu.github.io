@@ -344,7 +344,7 @@ main {
   left: 0;
   bottom: -20px;
   height: 1px;
-  width: 60px;
+  width: 100%;
   background-color: currentColor;
 }
 .cd-nav .cd-primary-nav {
@@ -1197,19 +1197,6 @@ Main components
 }
 
 
-.cd-overlay2 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url(../images/giphy.gif);
-  opacity: 0.3;	
-  cursor: pointer;
-  display: block;
-  z-index: 2;
-  overflow: hidden;
-}
 
 
 /* -------------------------------- 
@@ -1785,6 +1772,44 @@ xrotate-3
     -o-transform: rotateY(-180deg);
     transform: rotateY(-180deg);
   }
+}
+
+/* cool button  */
+.buttonc{
+  background:#1AAB8A;
+  color:#fff;
+  border:none;
+  position:relative;
+  height:60px;
+  font-size:1.6em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+.buttonc:hover{
+  background:#fff;
+  color:#1AAB8A;
+}
+.buttonc:before,button:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #1AAB8A;
+  transition:400ms ease all;
+}
+.buttonc:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.buttonc:hover:before,button:hover:after{
+  width:100%;
+  transition:800ms ease all;
 }
 
 /*   */
