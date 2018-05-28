@@ -353,7 +353,7 @@ main {
 .cd-nav .cd-primary-nav li {
   margin: 1.6em 0;
 }
-.cd-nav .cd-primary-nav a {
+/*.cd-nav .cd-primary-nav a {
   font-family: "Merriweather", serif;
   font-size: 2.4rem;
   color: rgba(255, 255, 255, 0.3);
@@ -364,7 +364,92 @@ main {
 }
 .no-touch .cd-nav .cd-primary-nav a:hover {
   color: #ffffff;
+}*/
+
+/******************************/
+
+.no-touch .cd-nav .cd-primary-nav a{
+  background:#1AAB8A;
+  color:#fff;
+  border:none;
+  position:relative;
+  height:60px;
+  font-size:1.6em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+  display: inline-block;	
 }
+.no-touch .cd-nav .cd-primary-nav a:hover{
+  background:#fff;
+  color:#1AAB8A;
+}
+.no-touch .cd-nav .cd-primary-nav a:before,button:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #1AAB8A;
+  transition:400ms ease all;
+  display: inline-block;	
+}
+.no-touch .cd-nav .cd-primary-nav a:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.no-touch .cd-nav .cd-primary-nav a:hover:before,.no-touch .cd-nav .cd-primary-nav a:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+
+
+.cd-nav .cd-primary-nav a{
+  background:#1AAB8A;
+  color:#fff;
+  border:none;
+  position:relative;
+  height:60px;
+  font-size:1.6em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+  display: inline-block;	
+}
+.cd-nav .cd-primary-nav a:hover{
+  background:#fff;
+  color:#1AAB8A;
+}
+.cd-nav .cd-primary-nav a:before,button:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #1AAB8A;
+  transition:400ms ease all;
+}
+.cd-nav .cd-primary-nav a:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.cd-nav .cd-primary-nav a:hover:before,.cd-nav .cd-primary-nav a:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+
+
+/***************************************/
 .cd-nav .cd-contact-info {
   margin-top: 80px;
 }
@@ -1807,7 +1892,7 @@ xrotate-3
   left:0;
   bottom:0;
 }
-.buttonc:hover:before,button:hover:after{
+.buttonc:hover:before,.buttonc:hover:after{
   width:100%;
   transition:800ms ease all;
 }
