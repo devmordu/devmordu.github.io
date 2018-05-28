@@ -1524,26 +1524,26 @@ xkeyframes
 .cd-intro {
   
   
-  padding: 20px 0px;
-  color:darkblue;
+  padding: 0px 0px;
+  color:white;
   font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";	
   max-width: 1200px;
   text-align: center;
 }
 
 .cd-headline {
-  font-size: 3rem;
+  font-size: 1rem;
   line-height: 1.2;
 }
 @media only screen and (min-width: 768px) {
   .cd-headline {
-    font-size: 4rem;
+    font-size: 2rem;
     font-weight: 300;
   }
 }
 @media only screen and (min-width: 1170px) {
   .cd-headline {
-    font-size: 5rem;
+    font-size: 3rem;
   }
 }
 

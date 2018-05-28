@@ -11,7 +11,13 @@
 <link rel="stylesheet" href="custom/main.css">	
 			
 <title>Interface 2018 Website</title>
+<style>
+@font-face {
+font-family: moiser;
+src: url(includes/Typo Moiser free promo.ttf);
+}	
 	
+</style>	
 	
 </head>
 
@@ -22,11 +28,11 @@
 
 <!-- carousel -->
   <div id="carouselExampleIndicators" class="carousel carousel-fade slide" data-ride="carousel">
-  <div class="container-fluid text-center" style="position: absolute; z-index: 300; padding-top: 25vmin;" >  
+  <div class="container-fluid text-center" style="position: absolute; z-index: 300; padding-top: 0vmin;" >  
     
-	<section class="cd-intro container-fluid" style="background-color:rgba(140,137,137,0.8);">
+	<section class="cd-intro container-fluid">
+		<img class="img-fluid" src="images/logo+tatva+interface.png">
 		<h1 class="cd-headline letters rotate-3">
-			<span>INTERFACE</span>
 			<span class="cd-words-wrapper">
 				<b class="is-visible">PITCHING</b>
 				<b>&nbsp;&nbsp;TALKS&nbsp;</b>
@@ -42,45 +48,22 @@
     <div class="carousel-item">
 		<im class="d-block w-100" src="images/1.jpg"  alt="First Image"></im>
      	 
-      <div class="carousel-caption d-md-block" style="">
-              <img class="img-fluid" src="images/group.svg" style="width: 15vh;" data-animation="animated bounceInLeft" >
-		      <div >
-              <h3 style=" " data-animation="animated bounceInRight">
-                EVENTS
-              </h3>
-			  </div>	  
-              <button class="btn btn-primary btn-lg" data-animation="animated zoomInUp">Button</button>
-      </div>
     </div>
     <div class="carousel-item">
 		<im class="d-block w-100" src="images/2.jpg"  alt="Second Image"></im>
-      <div class="carousel-caption d-md-block">
-        <img class="img-fluid" src="images/group.svg" style="width: 15vh;" data-animation="animated bounceInLeft" >
-              <h3 data-animation="animated bounceInRight">
-                EVENTS
-              </h3>
-              <button class="btn btn-primary btn-lg" data-animation="animated zoomInUp">Button</button>
-      </div>
     </div>
     <div class="carousel-item">
       <im class="d-block w-100" src="images/3.jpg"  alt="Third Image"></im>
-      <div class="carousel-caption d-md-block">
-        <img class="img-fluid" src="images/group.svg" style="width: 15vh;" data-animation="animated bounceInLeft" >
-              <h3 data-animation="animated bounceInRight">
-                EVENTS
-              </h3>
-              <button class="btn btn-primary btn-lg" data-animation="animated zoomInUp">Button</button>
-      </div>
     </div>
 	<div class="carousel-item">
       <im class="d-block w-100" src="images/4.jpg"  alt="Fourth Image"></im>
-      <div class="carousel-caption d-md-block">
+      <!--div class="carousel-caption d-md-block">
         <img class="img-fluid" src="images/group.svg" style="width: 15vh;" data-animation="animated bounceInLeft" >
               <h3 data-animation="animated bounceInRight">
                 EVENTS
               </h3>
               <button class="btn btn-primary btn-lg" data-animation="animated zoomInUp">Button</button>
-      </div>
+		</div-->
     </div>  
   </div>
 	     
@@ -338,7 +321,7 @@
 
 				<nav>
 					<ul class="cd-primary-nav">
-						<li><button class="buttonc"><a href="#0" class="selected">The team</a></button></li>
+						<li><a href="#0" class="selected">The team</a></li>
 						<li><a href="#0">Our services</a></li>
 						<li><a href="#0">Our projects</a></li>
 						<li><a href="#0">Start a project</a></li>
