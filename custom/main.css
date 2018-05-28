@@ -3,8 +3,14 @@
 
 /*Bootstrap CArousel */
 
-
-
+.child {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+a:hover {
+	text-decoration: none;
+}
 .full-screen {
   background-size: cover;
   background-position: center;
