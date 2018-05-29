@@ -1532,7 +1532,7 @@ xkeyframes
   
   padding: 0px 0px;
   color:white;
-  font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";	
+  font-family: 'Exo 2', sans-serif;	
   max-width: 1200px;
   text-align: center;
 }
@@ -1868,8 +1868,8 @@ xrotate-3
 
 /* cool button  */
 .buttonc{
-  background:#1AAB8A;
-  color:#fff;
+  background:#beb7a4;
+  color:#FF4C00;
   border:none;
   position:relative;
   height:5vmin;
@@ -1878,15 +1878,15 @@ xrotate-3
   cursor:pointer;
   transition:800ms ease all;
   outline:none;
-  border-radius: 15px;
+  border-radius: 5px;
 }
 .buttonc:hover{
-  background:#fff;
-  color:#1AAB8A;
+  background:#FF4C00;
+  color:#beb7a4;
 }
 .no-touch .buttonc:hover{
-  background:#fff;
-  color:#1AAB8A;
+  background:#FF4C00;
+  color:#beb7a4;
 }
 
 .buttonc:before,button:after{
@@ -1896,7 +1896,7 @@ xrotate-3
   right:0;
   height:2px;
   width:0;
-  background: #1AAB8A;
+  background: #beb7a4;
   transition:400ms ease all;
 }
 .buttonc:after{
