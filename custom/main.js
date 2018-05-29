@@ -1,6 +1,12 @@
 // JavaScript Document
 
 /* Bootstrap Carousel */
+/*touch support*/
+
+if (!("ontouchstart" in document.documentElement)) {
+document.documentElement.className += " no-touch";
+}
+
 
 var $item = $('.carousel-item'); 
 var $wHeight = $(window).height();
@@ -181,7 +187,7 @@ jQuery(document).ready(function($){
 });
 
 
-/* Carousel Animate script */
+/* Carousel Animate script 
 
 (function($) {
   //Function to animate slider captions
@@ -376,4 +382,39 @@ jQuery(document).ready(function($){
 	}
 });
 
-/*  */
+/* Animate.css files */
+
+function animationHover(element, animation){
+    element = $(element);
+    element.hover(
+        function() {
+            element.addClass('animated ' + animation);        
+        },
+        function(){
+            //wait for animation to finish before removing classes
+            window.setTimeout( function(){
+                element.removeClass('animated ' + animation);
+            }, 2000);         
+        });
+}
+
+function animationClick(element, animation){
+    element = $(element);
+    element.click(
+        function() {
+            element.addClass('animated ' + animation);        
+            //wait for animation to finish before removing classes
+            window.setTimeout( function(){
+                element.removeClass('animated ' + animation);
+            }, 2000);         
+  
+        });
+}
+
+$(document).ready(function(){
+    $('#logomax').each(function() {
+        animationHover(this, 'bounce');
+    });
+});
+
+/*     */

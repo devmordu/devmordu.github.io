@@ -1872,17 +1872,23 @@ xrotate-3
   color:#fff;
   border:none;
   position:relative;
-  height:60px;
-  font-size:1.6em;
+  height:5vmin;
+  font-size:2vmin;
   padding:0 2em;
   cursor:pointer;
   transition:800ms ease all;
   outline:none;
+  border-radius: 15px;
 }
 .buttonc:hover{
   background:#fff;
   color:#1AAB8A;
 }
+.no-touch .buttonc:hover{
+  background:#fff;
+  color:#1AAB8A;
+}
+
 .buttonc:before,button:after{
   content:'';
   position:absolute;
@@ -1900,6 +1906,11 @@ xrotate-3
   bottom:0;
 }
 .buttonc:hover:before,.buttonc:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+.notouch .buttonc:hover:before,.notouch .buttonc:hover:after{
   width:100%;
   transition:800ms ease all;
 }
